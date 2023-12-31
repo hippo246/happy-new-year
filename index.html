@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #clickBox {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="clickBox" onclick="displayMessage()">Click me!</div>
+
+<script>
+  function displayMessage() {
+    document.getElementById("clickBox").innerHTML = "Happy New Year!";
+  }
+</script>
+
+</body>
+</html>
